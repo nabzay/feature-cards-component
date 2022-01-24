@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* Root Variables */
+:root {
+  --c-primary-team: hsl(0, 78%, 62%);
+  --c-primary-super: hsl(180, 62%, 55%);
+  --c-primary-karma: hsl(34, 97%, 64%);
+  --c-primary-calc: hsl(212, 86%, 64%);
+
+  --c-neutral-text-dark: hsl(234, 12%, 34%);
+  --c-neutral-text-regular: hsl(229, 6%, 66%);
+  --c-neutral-bg: hsl(0, 0%, 98%);
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
+
+  /* Variable Font Sizes - Heading */
+  --fs-heading__mobile: 1.5rem;
+  --fs-heading__desktop: 2.25rem;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Base Styles */
+
+body {
+  background: var(--c-neutral-bg);
+  min-height: 100vh;
+
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+  font-size: 0.9375rem;
+
+  /* padding: 1.6em; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
