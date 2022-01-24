@@ -47,9 +47,44 @@ body {
   font-weight: var(--fw-400);
   font-size: 0.9375rem;
 
-  /* padding: 1.6em; */
+  padding: 2.13em;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Typography & Text Color */
+main .heading h1 {
+  font-size: var(--fs-heading__mobile);
+  line-height: 1.375;
+  letter-spacing: 0.17px;
+
+  font-weight: var(--fw-200);
+
+  color: var(--c-neutral-text-dark);
+}
+
+main .heading span {
+  font-weight: var(--fw-600);
+}
+
+main .heading > p {
+  line-height: 1.67;
+  letter-spacing: 0.1px;
+  color: var(--c-neutral-text-regular);
+}
+
+main .features p {
+  color: var(--c-neutral-text-regular);
+  letter-spacing: 0.09px;
+  line-height: 1.77;
+
+  font-size: 0.8125rem;
+}
+
+main .features h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--c-neutral-text-dark);
 }
