@@ -91,6 +91,9 @@ main .features h3 {
 }
 
 /* Spacing & Layout */
+main {
+  max-width: 20.73em;
+}
 main .heading span {
   margin-top: 0.17em;
   margin-bottom: 0.67em;
@@ -114,17 +117,46 @@ main .features .card {
 
   box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
   position: relative;
-
-  max-width: 20.73em;
-  margin: 0 auto;
 }
 
-main .features > .card::before {
+/* Cards upper border */
+
+main .features > .super::before {
   content: "";
   inset: 0;
   height: 3.55px;
   width: 100%;
-  background-color: red;
+  background-color: var(--c-primary-super);
+  position: absolute;
+  border-radius: 0.53em 0.53em 0 0;
+}
+
+main .features > .team::before {
+  content: "";
+  inset: 0;
+  height: 3.55px;
+  width: 100%;
+  background-color: var(--c-primary-team);
+  position: absolute;
+  border-radius: 0.53em 0.53em 0 0;
+}
+
+main .features > .karma::before {
+  content: "";
+  inset: 0;
+  height: 3.55px;
+  width: 100%;
+  background-color: var(--c-primary-karma);
+  position: absolute;
+  border-radius: 0.53em 0.53em 0 0;
+}
+
+main .features > .calc::before {
+  content: "";
+  inset: 0;
+  height: 3.55px;
+  width: 100%;
+  background-color: var(--c-primary-calc);
   position: absolute;
   border-radius: 0.53em 0.53em 0 0;
 }
@@ -146,4 +178,19 @@ main .features h3 {
   max-height: 3.8em;
   max-width: 3.8em;
   align-self: flex-end;
+}
+
+/* Small Laptops & Tablets*/
+@media screen and (min-width: 44em) {
+  main {
+    max-width: 42em;
+  }
+
+  main .card {
+    max-width: 20.73em;
+  }
+
+  main .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
