@@ -195,7 +195,8 @@ main .features h3 {
   }
 }
 
-@media only screen and (min-width: 72em) {
+/* Desktop Styles */
+@media only screen and (min-width: 73.5em) {
   main {
     max-width: 74em;
   }
@@ -232,6 +233,41 @@ main .features h3 {
 
   main .card {
     max-width: 23.33em;
+  }
+
+  /* Typography */
+
+  main .heading h1 {
+    font-size: var(--fs-heading__desktop);
+    line-height: 1.42;
+    letter-spacing: 0.25px;
+  }
+
+  main .heading > p {
+    max-width: 37em;
+    margin: 0 auto;
+  }
+
+  /* Layout & Spacing */
+  main .heading {
+    margin-bottom: 4.27em;
+  }
+
+  main .heading span {
+    margin-top: 0;
+    margin-bottom: 0.44em;
+  }
+
+  main .features h3 {
+    margin-bottom: 0.4em;
+  }
+
+  .features .card > p {
+    margin-bottom: 3.08em;
+  }
+
+  main .features .card {
+    padding: 2.13em;
   }
 
   .card .icon {
